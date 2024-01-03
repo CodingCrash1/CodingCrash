@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0yxtsq2d603w"]
+
+[ext_resource type="PackedScene" uid="uid://3jad7i57rl8j" path="res://SceneA.tscn" id="1_cirbs"]
+[ext_resource type="PackedScene" uid="uid://duljx0eon2r8v" path="res://SceneB.tscn" id="2_jgxr6"]
+
+[node name="SceneC" type="Node2D"]
+
+[node name="SceneA" parent="." instance=ExtResource("1_cirbs")]
+
+[node name="SceneB" parent="." instance=ExtResource("2_jgxr6")]

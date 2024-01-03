@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://dw84l6trfpty5"]
+
+[ext_resource type="PackedScene" uid="uid://b0yxtsq2d603w" path="res://SceneC.tscn" id="2_6l5p1"]
+[ext_resource type="PackedScene" uid="uid://ck0iaje0h482v" path="res://player.tscn" id="4_5bh8v"]
+[ext_resource type="PackedScene" uid="uid://c7iw3gcqk75rf" path="res://Block.tscn" id="5_vwdt7"]
+[ext_resource type="PackedScene" uid="uid://bhfboniq0u5ro" path="res://Ball.tscn" id="6_ug2n4"]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="SceneC" parent="." instance=ExtResource("2_6l5p1")]
+scale = Vector2(0.945611, 1.39597)
+
+[node name="Icon4" type="Sprite2D" parent="."]
+position = Vector2(702, 64)
+
+[node name="Ball" parent="." instance=ExtResource("6_ug2n4")]
+position = Vector2(129, 60)
+
+[node name="Ball2" parent="." instance=ExtResource("6_ug2n4")]
+position = Vector2(336, 269)
+
+[node name="Ball3" parent="." instance=ExtResource("6_ug2n4")]
+position = Vector2(208, 269)
+
+[node name="Ball4" parent="." instance=ExtResource("6_ug2n4")]
+position = Vector2(107, 175)
+
+[node name="Ball5" parent="." instance=ExtResource("6_ug2n4")]
+position = Vector2(233, 137)
+
+[node name="Ball6" parent="." instance=ExtResource("6_ug2n4")]
+position = Vector2(302, 107)
+
+[node name="Block" parent="." instance=ExtResource("5_vwdt7")]
+position = Vector2(-8, -38)
+
+[node name="Player" parent="." instance=ExtResource("4_5bh8v")]
+position = Vector2(200, 165)
